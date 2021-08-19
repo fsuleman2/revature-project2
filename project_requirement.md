@@ -14,11 +14,14 @@
 3. Data Access is performed through the use of Spring Boot in a data layer consisting of Data Access Objects.
 4. All input is received using the Angular Framework
 5. Log4j is implemented to log events to a file.
+6. JUNIT for Java Testing
+7. Jasmine for Client side Testing
 
 ## Tech Stack
 1. Angular
 2. Java
 3. Spring Boot
+4. Hibernate
 
 ## User Stories
 Total Points: 23 points
