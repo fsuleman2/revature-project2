@@ -13,7 +13,7 @@ Password : root12345
 1. spring-boot-starter-web<br>
 2. spring-boot-starter-data-jpa<br>
 3. spring-boot-starter-test<br>
-4. postgresql
+4. postgresql<br>
 5. Java8
 
 <h3>Spring maven Plugins<h3>
