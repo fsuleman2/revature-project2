@@ -1,4 +1,4 @@
-# revature-project2
+# Examination(Imtehan) Portal
 ## Postgress Credentials
 ```sql
 Database Name : postgres
