@@ -30,3 +30,6 @@ $ng new examfront //creating our app
 cd examfront
 ng serve --open //for running project on server
 ```
+### Angular Libraries Used
+  1. Angular Material UI
+  ``` ng add @angular/material ```
