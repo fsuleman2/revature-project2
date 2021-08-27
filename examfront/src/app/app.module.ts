@@ -13,6 +13,11 @@ import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+import { MatIconModule } from '@angular/material/icon';
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +36,11 @@ import { HomeComponent } from './pages/home/home.component';
     MatFormFieldModule,
     FormsModule,
     MatCardModule,
+    MatIconModule,
+    ReactiveFormsModule,
+    MatTabsModule,
+    MatCheckboxModule,
+    MatToolbarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
