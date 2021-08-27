@@ -9,15 +9,20 @@ import { FooterComponent } from './components/footer/footer.component';
 import { SignupComponent } from './pages/signup/signup.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { FormGroup, FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
 import { LoginComponent } from './pages/login/login.component';
 import { HomeComponent } from './pages/home/home.component';
+
+import {HttpClientModule} from '@angular/common/http';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
 import { MatIconModule } from '@angular/material/icon';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatToolbarModule} from '@angular/material/toolbar';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -36,11 +41,16 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatFormFieldModule,
     FormsModule,
     MatCardModule,
+
+    HttpClientModule,
+    MatSnackBarModule,
+
     MatIconModule,
     ReactiveFormsModule,
     MatTabsModule,
     MatCheckboxModule,
     MatToolbarModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

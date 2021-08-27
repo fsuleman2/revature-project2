@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,6 +21,7 @@ import com.exam.service.UserService;
 
 @RestController
 @RequestMapping("/user")
+@CrossOrigin("*")
 public class UserController {
 	@Autowired
 	private UserService userService;
@@ -27,6 +29,7 @@ public class UserController {
 	//for saving data we are using post mapping
 	@PostMapping("/")
 	public User createUser(@RequestBody User user) throws Exception {
+		user.setProfile("default.png");
 		Set<UserRole> roles = new HashSet<>();
 		Role role = new Role(45L,"NORMAL");
 		UserRole userRole = new UserRole();
