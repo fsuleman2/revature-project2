@@ -4,6 +4,7 @@
 Database Name : postgres
 Username : postgres
 Password : root12345
+Schema Name : exam_schema
 ```
 <hr>
 
@@ -30,3 +31,6 @@ $ng new examfront //creating our app
 cd examfront
 ng serve --open //for running project on server
 ```
+### Angular Libraries Used
+  1. Angular Material UI <br>
+  ``` ng add @angular/material ```
