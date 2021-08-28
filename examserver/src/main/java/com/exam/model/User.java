@@ -39,7 +39,7 @@ public class User implements UserDetails {
 	private boolean enabled = true;
 	private String profile;
 	
-/*******************************************variable declaration ends***************************************/
+/******************************************* variable declaration ends ***************************************/
 	
 	
 	//user can have many users so for storing that we use SET DS
@@ -72,7 +72,7 @@ public class User implements UserDetails {
 		this.userRoles.forEach(userRole -> {
 			set.add(new Authority(userRole.getRole().getRoleName())); //normal or admin
 		});
-		return null;
+		return set;
 	}
 	@Override
 	public boolean isAccountNonExpired() {
@@ -84,7 +84,7 @@ public class User implements UserDetails {
 	}
 	@Override
 	public boolean isCredentialsNonExpired() {
-		return false;
+		return true;
 	}
 
 }
