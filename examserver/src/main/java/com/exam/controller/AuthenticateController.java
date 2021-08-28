@@ -8,6 +8,7 @@ import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,7 @@ import com.exam.model.JwtResponse;
 import com.exam.serviceimpl.UserDetailsServiceImpl;
 
 @RestController
+@CrossOrigin(origins = "*")
 public class AuthenticateController {
 	@Autowired
 	private AuthenticationManager authenticationManager;
@@ -29,7 +31,9 @@ public class AuthenticateController {
 	private JwtUtils jwtUtils;
 
 	// generating token
+	
 	 @PostMapping("/generate-token")
+	 
 	    public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest) throws Exception {
 
 	        try {
