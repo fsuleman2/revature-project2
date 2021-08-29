@@ -75,8 +75,11 @@ formSubmit(){
       Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'User Already Exist',
+        text: 'User Already Exist, Try with another Username',
       })
+      // this._snack.open(error.error.text, '', {
+      //   duration: 3000,
+      // });
       this.route.navigate(['signup'])
      }
    )
