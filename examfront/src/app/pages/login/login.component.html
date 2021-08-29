@@ -1,11 +1,10 @@
 <div class="login-page">
-<app-navbar></app-navbar>
   <mat-card class="mat-elevation-z12">
     <mat-card-title style="text-align:center;">Login Here!!</mat-card-title>
     <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
       <mat-tab label="Login">
           <mat-card-content>
-            {{loginData| json}}
+            <!-- {{loginData| json}} -->
             <form (ngSubmit)="formSubmit()">
               <mat-form-field>
                 <input
@@ -44,7 +43,7 @@
                 mat-raised-button
                 color="primary"
                 class="login-button">
-                Sign In
+               Login In
               </button>
             </form>
         </mat-card-content>

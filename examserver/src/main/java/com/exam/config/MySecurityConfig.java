@@ -20,7 +20,8 @@ import com.exam.serviceimpl.UserDetailsServiceImpl;
 @EnableWebSecurity
 @Configuration
 @EnableGlobalMethodSecurity(prePostEnabled = true)
-public class MySecurityConfig extends WebSecurityConfigurerAdapter {// websecurity adapter is configured with default
+public class MySecurityConfig extends WebSecurityConfigurerAdapter {
+	// websecurity adapter is configured with default
 	// for we are customizing it according to our need
 	@Autowired
     private JwtAuthenticationEntryPoint unauthorizedHandler;
@@ -51,7 +52,7 @@ public class MySecurityConfig extends WebSecurityConfigurerAdapter {// websecuri
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-
+    		//method chaining
 
         http
                 .csrf()
