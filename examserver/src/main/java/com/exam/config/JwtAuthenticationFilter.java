@@ -38,7 +38,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 
         final String requestTokenHeader = request.getHeader("Authorization");
-        System.out.println(requestTokenHeader.length());
+//        System.out.println(requestTokenHeader.length());
         String username = null;
         String jwtToken = null;
 
@@ -76,6 +76,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 		else {
 			System.out.println("token is not valid");
 		}
+		//if validated send response
 		filterChain.doFilter(request, response);
 	}
 

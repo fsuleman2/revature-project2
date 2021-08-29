@@ -2,10 +2,7 @@ package com.exam;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.servlet.config.annotation.CorsRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 @CrossOrigin("*")
@@ -16,16 +13,16 @@ public class ExamserverApplication{
 	public static void main(String[] args) {
 		SpringApplication.run(ExamserverApplication.class, args);
 	}
-	@Bean
-	public WebMvcConfigurer configurer() {
-		return new WebMvcConfigurer() {
-			@Override
-			public void addCorsMappings(CorsRegistry registry) {
-				// TODO Auto-generated method stub
-				registry.addMapping("/*").allowedOrigins("*");
-			}
-		};
-	}
+//	@Bean
+//	public WebMvcConfigurer configurer() {
+//		return new WebMvcConfigurer() {
+//			@Override
+//			public void addCorsMappings(CorsRegistry registry) {
+//				// TODO Auto-generated method stub
+//				registry.addMapping("/*").allowedOrigins("*");
+//			}
+//		};
+//	}
 
 //	@Override
 //	public void run(String... args) throws Exception {

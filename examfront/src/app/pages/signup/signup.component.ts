@@ -3,6 +3,7 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 import { UserService } from 'src/app/services/user.service';
 import Swal from 'sweetalert2';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -11,7 +12,7 @@ import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angula
 })
 export class SignupComponent implements OnInit {
   form: FormGroup = new FormGroup({});  
-  constructor(private userService:UserService, private _snack:MatSnackBar) {
+  constructor(private userService:UserService, private _snack:MatSnackBar,private route:Router) {
    }
   //creating js object to store model var from  backet
 public user = {
@@ -64,6 +65,7 @@ formSubmit(){
        console.log(data)
        //alert("success") replacing witg sweetalert2
        Swal.fire('Success Registered !!', 'User id is '+data.id,'success')
+      this.route.navigate(['login'])
      },
      //for error
      (error:any)=>{
@@ -75,6 +77,7 @@ formSubmit(){
         title: 'Oops...',
         text: 'User Already Exist',
       })
+      this.route.navigate(['signup'])
      }
    )
 }
