@@ -13,6 +13,8 @@ public class ExamserverApplication{
 	public static void main(String[] args) {
 		SpringApplication.run(ExamserverApplication.class, args);
 	}
+//	@Autowired
+//	private BCryptPasswordEncoder bCryptPasswordEncoder;
 //	@Bean
 //	public WebMvcConfigurer configurer() {
 //		return new WebMvcConfigurer() {
@@ -31,7 +33,7 @@ public class ExamserverApplication{
 //		user.setFirstName("syed");
 //		user.setLastName("suleman");
 //		user.setUsername("sul123");
-//		user.setPassword("sul@123");
+//		user.setPassword(this.bCryptPasswordEncoder.encode("sul@123"));
 //		user.setEmail("sul@gmail.com");
 //		user.setPhone("8121795121");
 //		user.setProfile("admin");
