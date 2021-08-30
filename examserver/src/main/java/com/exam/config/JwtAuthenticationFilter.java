@@ -7,6 +7,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -25,7 +27,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 	@Autowired
 	private UserDetailsServiceImpl userDetailsServiceImpl;
-
+	 private static final Logger log = LogManager.getLogger(UserDetailsServiceImpl.class);
 	@Autowired
 	private JwtUtils jwtUtil; // copied from google
 	/*
@@ -51,14 +53,14 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
                 username = this.jwtUtil.extractUsername(jwtToken);
             } catch (ExpiredJwtException e) {
                 e.printStackTrace();
-                System.out.println("jwt token has expired");
+               log.info("jwt token has expired");
             } catch (Exception e) {
                 e.printStackTrace();
-                System.out.println("error");
+               log.error("error");
             }
 
         } else {
-            System.out.println("Invalid token , not start with bearer string");
+           log.warn("Invalid token , not start with bearer string");
         }
 		// validated
 		// token hai to validate properly hora hai ki nai?
@@ -74,7 +76,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 			}
 		}
 		else {
-			System.out.println("token is not valid");
+			log.info("token is not valid");
 		}
 		//if validated send response
 		filterChain.doFilter(request, response);
