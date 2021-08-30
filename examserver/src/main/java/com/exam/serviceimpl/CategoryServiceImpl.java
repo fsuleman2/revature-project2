@@ -25,10 +25,10 @@ public class CategoryServiceImpl implements CategoryService{
 		return categoryRepository.save(category);
 	}
 
-	@Override
-	public Set<Category> getCategories() {
-		return new LinkedHashSet<>(this.categoryRepository.findAll()); 
-	}
+	  @Override
+	    public Set<Category> getCategories() {
+	        return new LinkedHashSet<>(this.categoryRepository.findAll());
+	    }
 
 	@Override
 	public Category getCategory(Long categoryId) {

@@ -1,23 +1,12 @@
 package com.exam;
 
-import java.util.HashSet;
-import java.util.Set;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.CrossOrigin;
-
-import com.exam.model.Role;
-import com.exam.model.User;
-import com.exam.model.UserRole;
-import com.exam.service.UserService;
 
 @SpringBootApplication
 @CrossOrigin("*")
-public class ExamserverApplication /*implements CommandLineRunner*/{
+public class ExamserverApplication {
 //	private static final Logger logger = LogManager.getLogger(Log4j2DemoApplication.class);
 //	@Autowired
 //	private UserService userService;

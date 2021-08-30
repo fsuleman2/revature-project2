@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.exam.model.Category;
@@ -43,10 +42,10 @@ public class CategoryController {
 	}
 	
 	//get all categories
-	@GetMapping("/")
-	public ResponseEntity<?> getCategories(){
-		return ResponseEntity.ok(this.categoryService.getCategories());
-	}
+	  @GetMapping("/")
+	    public ResponseEntity<?> getCategories() {
+	        return ResponseEntity.ok(this.categoryService.getCategories());
+	    }
 	
 	@PutMapping("/")
 	public Category updateCategory(@RequestBody Category category) {
