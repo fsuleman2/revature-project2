@@ -8,8 +8,14 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @CrossOrigin("*")
 public class ExamserverApplication {
 
+
 	// @Autowired
 	// private UserService userService;
+
+//	private static final Logger logger = LogManager.getLogger(Log4j2DemoApplication.class);
+//	@Autowired
+//	private UserService userService;
+
 	public static void main(String[] args) {
 		SpringApplication.run(ExamserverApplication.class, args);
 	}
@@ -25,6 +31,7 @@ public class ExamserverApplication {
 //			}
 //		};
 //	}
+
 
 //	@Override
 //	public void run(String... args) throws Exception {
