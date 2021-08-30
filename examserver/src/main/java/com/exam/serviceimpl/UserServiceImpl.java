@@ -2,6 +2,8 @@ package com.exam.serviceimpl;
 
 import java.util.Set;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +20,7 @@ public class UserServiceImpl implements UserService {
 	private UserRepository userRepository;
 	@Autowired
 	private RoleRepository roleRepository;
-
+	 private static final Logger log = LogManager.getLogger(RoleRepository.class);
 	//creating user
 	@Override
 	public User createUser(User user, Set<UserRole> userRoles) throws Exception {
@@ -26,7 +28,7 @@ public class UserServiceImpl implements UserService {
 
 		User local = this.userRepository.findByUsername(user.getUsername());
 		if (local != null) {
-			System.out.println("User Already Exist");
+			log.info("User Already Exist");
 			throw new UserFoundException();
 		} else {
 			// create user
