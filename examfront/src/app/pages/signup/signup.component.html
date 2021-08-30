@@ -1,64 +1,103 @@
 <div class="bootstrap-wrapper">
     <div class="container">
-      <div class="row" style="margin-top:20px">
-        <div class="col-md-6 offset-md-3">
-          <mat-card>
-            <div class="container text-center">
-              <img src="../../../assets/exam1.png" width="150" height ="150" alt="" />
-            </div>
-            <h1 class="text-center">Register Here !!</h1>
-            <!-- {{user | json}} -->
-            <div class="container text-center">
+      <div class="login-page">
+        <mat-card class="mat-elevation-z12">
+          <mat-card-title style="text-align:center;">SignUp Here!!</mat-card-title>
+          <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">    
+            <mat-tab label="Sign Up">
+              <mat-card-content>
               <form (ngSubmit)="formSubmit()">
-                <mat-form-field class="full-width" appearance="fill">
-    
-                  <mat-label>User Name</mat-label>
-                  <input [(ngModel)]="user.username" name="username" matInput placeholder="Enter Your Username" required>
-                  <mat-hint>Username must be unique !!</mat-hint>
-                </mat-form-field><br>
-    
-    
-                <mat-form-field class="full-width" appearance="fill">
-                  <mat-label>User Password</mat-label>
-                  <input [(ngModel)]="user.password" name="password"  type="password" matInput placeholder="Enter Your Password" required>
-                </mat-form-field><br>
-    
-    
-                <mat-form-field class="full-width" appearance="fill">
-                  <mat-label>First Name</mat-label>
-                  <input [(ngModel)]="user.firstName" name="firstName" matInput placeholder="Enter First Name" required>
-                </mat-form-field><br>
-    
-    
-                <mat-form-field class="full-width" appearance="fill">
-                  <mat-label>Last Name</mat-label>
-                  <input [(ngModel)]="user.lastName" name="lastName"  matInput placeholder="Enter Your Last Name" required>
-                </mat-form-field><br>
-    
-    
-                <mat-form-field class="full-width" appearance="fill">
-                  <mat-label>Email</mat-label>
-                  <input [(ngModel)]="user.email" name="email" type="email" matInput placeholder="Enter Your Email Address" required>
-                </mat-form-field><br>
-    
-    
-                <mat-form-field class="full-width" appearance="fill">
-                  <mat-label>Phone Number</mat-label>
-                  <input [(ngModel)]="user.phone" class="form-control"
-                  required minlength="10" appForbiddenName="bob" name="phone" type="number" matInput placeholder="Enter Your Phone Number" required>
-               
-               
+                <mat-form-field>
+                  <input [(ngModel)]="user.firstName"
+                    matInput
+                    placeholder="First Name"
+                    required
+                    name="FirstName"
+                    ngModel
+                    #FirstName="ngModel">
+                    <mat-error
+                    *ngIf="FirstName.invalid">
+                    Firstame is required
+                    </mat-error>
                 </mat-form-field>
-    
-                <div class="container text-center">
-                  <button type="submit" mat-raised-button  [disabled]="!form.valid"  color="primary">Register</button>&nbsp;&nbsp;&nbsp;
-                  <!-- <button mat-raised-button color="warn">Clear</button> -->
-                </div>
+                <mat-form-field>
+                  <input [(ngModel)]="user.lastName"
+                    matInput
+                    placeholder="Last Name"
+                    required
+                    name="LastName"
+                    ngModel
+                    #LastName="ngModel">
+                    <mat-error
+                    *ngIf="LastName.invalid">
+                    Lastame is required
+                    </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                  <input [(ngModel)]="user.username"
+                    matInput
+                    placeholder="User Name"
+                    required
+                    name="username"
+                    ngModel
+                    #username="ngModel">
+                  <mat-error
+                    *ngIf="username.invalid">
+                    Username is required
+                  </mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                  <input [(ngModel)]="user.phone"
+                  matInput
+                  placeholder="Phone Number"
+                  type="number"
+                  minlength="10" maxlength=10 required
+                  name="phonenumber"
+                  ngModel
+                  #phonenumber="ngModel">
+                  <mat-icon matSuffix>phone</mat-icon>
+                  <mat-error
+                    *ngIf="phonenumber.errors && phonenumber.errors.required && phonenumber.errors.pattern">
+                    Re-Enter Phone Number
+                  </mat-error>
+              </mat-form-field>
+                <mat-form-field>
+                  <input [(ngModel)]="user.email"
+                    matInput
+                    placeholder="Email"
+                    required
+                    name="email"
+                    ngModel
+                    #email="ngModel">
+                    <mat-icon matSuffix>email</mat-icon>
+                    <mat-error *ngIf="email.invalid">Email is required</mat-error>
+                </mat-form-field>
+                <mat-form-field>
+                    <input [(ngModel)]="user.password"
+                    matInput
+                    placeholder="Password"
+                    type="password"
+                    required
+                    minlength="6"
+                    name="repassword"
+                    ngModel
+                    #repassword="ngModel">
+                    <mat-icon matSuffix>password</mat-icon>
+                    <mat-error
+                      *ngIf="repassword.errors && repassword.errors.required">
+                      Re-Enter Password is required
+                    </mat-error>
+                </mat-form-field>
+                <button
+                  mat-raised-button
+                  color="primary"
+                  class="login-button">
+                  Sign Up
+                </button>
               </form>
-              </div>
-          </mat-card>
-        </div>
-      </div>
+            </mat-card-content>
+          </mat-tab>
+        </mat-tab-group>
+      </mat-card>
     </div>
-  </div>
   

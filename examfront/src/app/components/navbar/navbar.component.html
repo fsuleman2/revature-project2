@@ -5,6 +5,37 @@
     <mat-icon>home</mat-icon>&nbsp;
   </a>
   <span>ExamPortal</span>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a
+    *ngIf="!isLoggedIn"
+    [routerLink]="'/'"
+    mat-icon-button
+    class="example-icon favorite-icon mr20 ml20"
+    aria-label="Example icon-button with heart icon"
+  >
+    Home
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a
+    *ngIf="!isLoggedIn"
+    [routerLink]="'/'"
+    mat-icon-button
+    class="example-icon favorite-icon mr20 ml20"
+    aria-label="Example icon-button with heart icon"
+  >
+    About
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a
+    *ngIf="!isLoggedIn"
+    [routerLink]="'/'"
+    mat-icon-button
+    class="example-icon favorite-icon mr20 ml20"
+    aria-label="Example icon-button with heart icon"
+  >
+    Contact us
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
     <span class="example-spacer"></span>
     <a
     *ngIf="!isLoggedIn"
