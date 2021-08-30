@@ -25,6 +25,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { authInterceptorProviders } from './services/auth.interceptor';
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboard.component';
+import { ProfileComponent } from './pages/profile/profile.component';
+import { MatListModule } from '@angular/material/list';
+import { SidebarComponent } from './pages/admin/sidebar/sidebar.component';
+import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
+import { AddCategoryComponent } from './pages/admin/add-category/add-category.component';
+import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
+import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
+import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.component';
+
 
 @NgModule({
   declarations: [
@@ -36,6 +45,14 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     HomeComponent,
     DashboardComponent,
     UserDashboardComponent,
+    UserSidebar,
+    ProfileComponent,
+    SidebarComponent,
+    WelcomeComponent,
+    AddCategoryComponent,
+    AddQuestionComponent,
+    AddQuizComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -55,6 +72,7 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
     MatTabsModule,
     MatCheckboxModule,
     MatToolbarModule,
+    MatListModule,
 
   ],
   providers: [authInterceptorProviders],

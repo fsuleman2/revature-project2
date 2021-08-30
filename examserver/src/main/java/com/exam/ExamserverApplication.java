@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 @SpringBootApplication
 @CrossOrigin("*")
-public class ExamserverApplication{
+public class ExamserverApplication {
 
-//	@Autowired
-//	private UserService userService;
+	// @Autowired
+	// private UserService userService;
 	public static void main(String[] args) {
 		SpringApplication.run(ExamserverApplication.class, args);
 	}
@@ -28,7 +28,7 @@ public class ExamserverApplication{
 
 //	@Override
 //	public void run(String... args) throws Exception {
-//		// TODO Auto-generated method stub
+	// TODO Auto-generated method stub
 //		User user=new User();
 //		user.setFirstName("syed");
 //		user.setLastName("suleman");
@@ -41,7 +41,7 @@ public class ExamserverApplication{
 //		Role role1 = new Role();
 //		role1.setRoleId(44L);
 //		role1.setRoleName("ADMIN");
-//		
+
 //		Set<UserRole> userRoleSet = new HashSet<>();
 //		
 //		UserRole userRole =  new UserRole();
@@ -51,9 +51,6 @@ public class ExamserverApplication{
 //		userRoleSet.add(userRole);
 //		User user1=this.userService.createUser(user, userRoleSet);
 //		System.out.println(user1.getUsername());
-//		
-//		
-//		
-//		
+
 //	}
 }
