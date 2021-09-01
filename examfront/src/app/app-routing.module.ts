@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
+import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 import { AddCategoryComponent } from './pages/admin/add-category/add-category.component';
+
 import { DashboardComponent } from './pages/admin/dashboard/dashboard.component';
 import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
 import { WelcomeComponent } from './pages/admin/welcome/welcome.component';
@@ -64,6 +67,10 @@ const routes: Routes = [
     pathMatch:'full',
     canActivate:[NormalGuard]
   },
+  {
+    path:'add-quiz',
+    component:AddQuizComponent,
+  }
 ];
 
 @NgModule({
