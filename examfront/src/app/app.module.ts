@@ -33,6 +33,7 @@ import { AddCategoryComponent } from './pages/admin/add-category/add-category.co
 import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
 import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -73,6 +74,7 @@ import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.co
     MatCheckboxModule,
     MatToolbarModule,
     MatListModule,
+    NgbModule,
 
   ],
   providers: [authInterceptorProviders],
