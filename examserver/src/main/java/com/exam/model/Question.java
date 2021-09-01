@@ -1,19 +1,17 @@
 package com.exam.model;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
-
+import javax.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Getter
+@Setter
 @Entity
 public class Question {
 	@Id
@@ -28,7 +26,8 @@ public class Question {
 	private String option4;
 	private String answer;
 	
-	
+	@Transient
+    private  String givenAnswer;
 	
 	
 	@ManyToOne(fetch = FetchType.EAGER)
