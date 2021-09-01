@@ -34,6 +34,8 @@ import { AddQuestionComponent } from './pages/admin/add-question/add-question.co
 import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.component';
 import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
 
 
 @NgModule({
@@ -75,6 +77,10 @@ import { ViewCategoriesComponent } from './pages/admin/view-categories/view-cate
     MatCheckboxModule,
     MatToolbarModule,
     MatListModule,
+    NgbModule,
+    NavbarModule,
+    WavesModule,
+    ButtonsModule
 
   ],
   providers: [authInterceptorProviders],
