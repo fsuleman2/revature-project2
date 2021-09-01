@@ -41,6 +41,7 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.component';
 
 
 
@@ -63,6 +64,7 @@ import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
     AddQuestionComponent,
     AddQuizComponent,
     ViewCategoriesComponent,
+    ViewQuizzesComponent,
     
   ],
   imports: [
