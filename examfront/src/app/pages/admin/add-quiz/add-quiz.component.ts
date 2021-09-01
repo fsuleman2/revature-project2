@@ -7,6 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddQuizComponent implements OnInit {
 
+categories=[
+  {
+    cid:23,
+    title:'programing'
+  },
+  {
+    cid:23,
+    title:'GK Quiz'
+  }
+]
+
   constructor() { }
 
   ngOnInit(): void {
