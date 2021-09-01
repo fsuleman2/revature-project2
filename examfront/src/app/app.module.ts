@@ -36,7 +36,8 @@ import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.co
 
 import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
+import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+import { ViewQuizzesComponent } from './view-quizzes/view-quizzes.component'
 
 
 
@@ -58,6 +59,7 @@ import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md'
     AddQuestionComponent,
     AddQuizComponent,
     ViewCategoriesComponent,
+    ViewQuizzesComponent,
     
   ],
   imports: [
