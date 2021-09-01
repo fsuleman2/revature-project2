@@ -33,9 +33,18 @@ import { AddCategoryComponent } from './pages/admin/add-category/add-category.co
 import { AddQuestionComponent } from './pages/admin/add-question/add-question.component';
 import { AddQuizComponent } from './pages/admin/add-quiz/add-quiz.component';
 import { SidebarComponent as UserSidebar } from './pages/user/sidebar/sidebar.component';
+
+import { ViewCategoriesComponent } from './pages/admin/view-categories/view-categories.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
+
+import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
+import { ViewQuizzesComponent } from './view-quizzes/view-quizzes.component'
+
+
+
 
 @NgModule({
   declarations: [
@@ -54,6 +63,8 @@ import {MatSelectModule} from '@angular/material/select';
     AddCategoryComponent,
     AddQuestionComponent,
     AddQuizComponent,
+    ViewCategoriesComponent,
+    ViewQuizzesComponent,
     
   ],
   imports: [
@@ -78,6 +89,12 @@ import {MatSelectModule} from '@angular/material/select';
     NgbModule,
     MatSlideToggleModule,
     MatSelectModule,
+
+
+    NavbarModule,
+    WavesModule,
+    ButtonsModule
+
 
   ],
   providers: [authInterceptorProviders],

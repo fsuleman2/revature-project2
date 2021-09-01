@@ -1,6 +1,7 @@
 import { ThrowStmt } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { LoginService } from 'src/app/services/login.service';
+// For MDB Angular Free
 
 @Component({
   selector: 'app-navbar',
