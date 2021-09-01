@@ -43,7 +43,7 @@ export class ViewQuizzesComponent implements OnInit {
       },
       (error:any)=>{
         console.log(error);
-        Swal.fire('Error !',"Error Loading data",error);
+        Swal.fire('Error !',"Error Loading data",'error');
       }
     )
   }
