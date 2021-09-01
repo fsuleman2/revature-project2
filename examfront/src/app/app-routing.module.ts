@@ -55,10 +55,10 @@ const routes: Routes = [
         path:'add-category',
         component:AddCategoryComponent
       },
-      // {
-      //   path:'quizzes',
-      //   component:ViewQuizzesComponent
-      // },
+      {
+        path:'quizzes',
+        component:ViewQuizzesComponent
+      },
       {
         path:'add-quiz',
         component:AddQuizComponent
