@@ -16,4 +16,6 @@ export class QuizService {
   public addQuiz(quiz:any){
     return this._http.post(`${baseUrl}/quiz/`,quiz)
   }
+   
+  //update quiz
 }

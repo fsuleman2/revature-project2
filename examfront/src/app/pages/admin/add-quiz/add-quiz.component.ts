@@ -72,7 +72,7 @@ if(this.quizData.numberOfQuestions.trim()=='' || this.quizData.numberOfQuestions
 //sending data to server
 this._quizService.addQuiz(this.quizData).subscribe(
   (data:any)=>{
-    Swal.fire('Success','quiz is added','success');
+    Swal.fire('Success','9ioquiz is added','success');
     //clearing
     this.quizData={
       title:'',
