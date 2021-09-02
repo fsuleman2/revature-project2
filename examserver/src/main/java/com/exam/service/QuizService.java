@@ -1,13 +1,15 @@
 package com.exam.service;
 
+import com.exam.model.exam.Category;
+import com.exam.model.exam.Quiz;
+import org.springframework.http.ResponseEntity;
+
 import java.util.List;
 import java.util.Set;
 
-import com.exam.model.Category;
-import com.exam.model.Quiz;
-
 public interface QuizService {
-	public Quiz addQuiz(Quiz quiz);
+
+    public Quiz addQuiz(Quiz quiz);
 
     public Quiz updateQuiz(Quiz quiz);
 

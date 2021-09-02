@@ -1,12 +1,13 @@
 package com.exam.service;
 
+import com.exam.model.exam.Question;
+import com.exam.model.exam.Quiz;
+
 import java.util.Set;
 
-import com.exam.model.Question;
-import com.exam.model.Quiz;
-
 public interface QuestionService {
-	public Question addQuestion(Question question);
+
+    public Question addQuestion(Question question);
 
     public Question updateQuestion(Question question);
 
@@ -19,4 +20,5 @@ public interface QuestionService {
     public void deleteQuestion(Long quesId);
 
     public Question get(Long questionsId);
+
 }

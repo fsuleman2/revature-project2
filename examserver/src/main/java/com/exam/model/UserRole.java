@@ -1,46 +1,45 @@
 package com.exam.model;
 
-import javax.persistence.Entity;
-import javax.persistence.FetchType;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class UserRole {
-	@Id
-	@GeneratedValue
-	private Long userRoleId;
-	
-	//taking one user
-	@ManyToOne(fetch = FetchType.EAGER)
-	private User user;
-	
-	@ManyToOne()
-	private Role role;
 
-	public Role getRole() {
-		return role;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long userRoleId;
 
-	public Long getUserRoleId() {
-		return userRoleId;
-	}
+    //user
+    @ManyToOne(fetch = FetchType.EAGER)
+    private User user;
 
-	public void setUserRoleId(Long userRoleId) {
-		this.userRoleId = userRoleId;
-	}
+    @ManyToOne
+    private Role role;
 
-	public User getUser() {
-		return user;
-	}
+    public UserRole() {
+    }
 
-	public void setUser(User user) {
-		this.user = user;
-	}
+    public Long getUserRoleId() {
+        return userRoleId;
+    }
 
-	public void setRole(Role role) {
-		this.role = role;
-	}
-	
+    public void setUserRoleId(Long userRoleId) {
+        this.userRoleId = userRoleId;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
 }

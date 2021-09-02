@@ -1,66 +1,64 @@
 package com.exam.controller;
 
-import java.security.Principal;
-
+import com.exam.config.JwtUtils;
+import com.exam.helper.UserNotFoundException;
+import com.exam.model.JwtRequest;
+import com.exam.model.JwtResponse;
+import com.exam.model.User;
+import com.exam.service.impl.UserDetailsServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UsernameNotFoundException;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
-import com.exam.config.JwtUtils;
-import com.exam.model.JwtRequest;
-import com.exam.model.JwtResponse;
-import com.exam.model.User;
-import com.exam.serviceimpl.UserDetailsServiceImpl;
+import java.security.Principal;
 
 @RestController
 @CrossOrigin("*")
 public class AuthenticateController {
-	@Autowired
-	private AuthenticationManager authenticationManager;
-
-	@Autowired
-	private UserDetailsServiceImpl userDetailsService;
-
-	@Autowired
-	private JwtUtils jwtUtils;
-
-	// generating token
-	
-	 @PostMapping("/generate-token")
-	 
-	    public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest) throws Exception {
-
-	        try {
-
-	            authenticate(jwtRequest.getUsername(), jwtRequest.getPassword());
 
 
-	        } catch (UsernameNotFoundException e) {
-	            e.printStackTrace();
-	            throw new Exception("User not found ");
-	        }
+    @Autowired
+    private AuthenticationManager authenticationManager;
 
-	        /////////////authenticate
+    @Autowired
+    private UserDetailsServiceImpl userDetailsService;
 
-	        UserDetails userDetails = this.userDetailsService.loadUserByUsername(jwtRequest.getUsername());
-	        String token = this.jwtUtils.generateToken(userDetails);
-	        return ResponseEntity.ok(new JwtResponse(token));
+    @Autowired
+    private JwtUtils jwtUtils;
 
 
-	    }
+    //generate token
 
-//method to authenticate
-	private void authenticate(String username, String password) throws Exception {
+    @PostMapping("/generate-token")
+    public ResponseEntity<?> generateToken(@RequestBody JwtRequest jwtRequest) throws Exception {
+
+        try {
+
+            authenticate(jwtRequest.getUsername(), jwtRequest.getPassword());
+
+
+        } catch (UserNotFoundException e) {
+            e.printStackTrace();
+            throw new Exception("User not found ");
+        }
+
+        /////////////authenticate
+
+        UserDetails userDetails = this.userDetailsService.loadUserByUsername(jwtRequest.getUsername());
+        String token = this.jwtUtils.generateToken(userDetails);
+        return ResponseEntity.ok(new JwtResponse(token));
+
+
+    }
+
+
+    private void authenticate(String username, String password) throws Exception {
 
         try {
 
@@ -72,10 +70,14 @@ public class AuthenticateController {
             throw new Exception("Invalid Credentials " + e.getMessage());
         }
     }
-	
-	/*those who logged in those user details will be fetch*/
-	@GetMapping("/current-user")
-	public User getCurrentUser(Principal principal) {
-		return (User) this.userDetailsService.loadUserByUsername(principal.getName());
-	}
+
+    //return the details of current user
+    @GetMapping("/current-user")
+    public User getCurrentUser(Principal principal) {
+        return ((User) this.userDetailsService.loadUserByUsername(principal.getName()));
+
+    }
+
+
+
 }
