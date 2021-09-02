@@ -20,17 +20,6 @@ export class ViewQuizzesComponent implements OnInit {
         title:'',
       },
     },
-    {
-      qId:23,
-      title:'Basic programming quiz',
-      description:'The Java SE is a computing-based platform and used for developing desktop or Window based applications. ',
-      maxMarks:50,
-      numberOfQuestions:'20',
-      active:'',
-      category:{
-        title:'dsdd',
-      },
-    },
   ]
 
   constructor(private _quiz:QuizService) { }

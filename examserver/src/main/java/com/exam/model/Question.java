@@ -25,7 +25,7 @@ public class Question {
     @Transient
     private  String givenAnswer;
 
-    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
+    @ManyToOne(fetch = FetchType.EAGER)
     private Quiz quiz;
 
     public Question() {

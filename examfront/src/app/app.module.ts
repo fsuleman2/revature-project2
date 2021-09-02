@@ -49,7 +49,7 @@ import { InstructionsComponent } from './pages/user/instructions/instructions.co
 import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
 import { ViewQuestionsComponent } from './pages/admin/view-questions/view-questions.component';
 import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/view-quiz-questions.component';
-
+import { CKEditorModule } from '@ckeditor/ckeditor5-angular';
 
 
 
@@ -108,7 +108,8 @@ import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/vi
     NavbarModule,
     WavesModule,
     ButtonsModule,
-    
+    CKEditorModule,
+    FormsModule
 
 
   ],
