@@ -12,6 +12,23 @@ export class QuizService {
     return this._http.get(`${baseUrl}/quiz/`);
   }
 
+
+  //get quizzes of category
+  public getQuizzesOfCategory(cid:any) {
+    return this._http.get(`${baseUrl}/quiz/category/${cid}`);
+  }
+
+  //qet active quizzes
+  public getActiveQuizzes() {
+    return this._http.get(`${baseUrl}/quiz/active`);
+  }
+
+  //get active quizzes of category
+  public getActiveQuizzesOfCategory(cid:any) {
+    return this._http.get(`${baseUrl}/quiz/category/active/${cid}`);
+  }
+
+
   //add quiz
   public addQuiz(quiz:any){
     return this._http.post(`${baseUrl}/quiz/`,quiz)
@@ -31,4 +48,5 @@ export class QuizService {
   public deleteQuiz(qId: any){
     return this._http.delete(`${baseUrl}/quiz/${qId}`);
   }
+
 }
