@@ -23,7 +23,7 @@ export class ViewQuizQuestionsComponent implements OnInit {
       option4:"Collections",
       answer:"OOPS",
       quiz:{
-        qid:''
+        qId:''
       }
     }
    ];

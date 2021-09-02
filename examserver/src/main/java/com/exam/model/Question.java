@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Question {
 
+
     @Id
     @GeneratedValue
     private Long quesId;
