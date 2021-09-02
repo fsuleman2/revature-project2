@@ -107,5 +107,4 @@ public class Quiz {
 	    public void setQuestions(Set<Question> questions) {
 	        this.questions = questions;
 	    }
-	
 }

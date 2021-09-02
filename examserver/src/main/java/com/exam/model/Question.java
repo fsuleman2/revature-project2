@@ -5,6 +5,7 @@ import javax.persistence.*;
 @Entity
 public class Question {
 
+
     @Id
     @GeneratedValue
     private Long quesId;
@@ -24,7 +25,7 @@ public class Question {
     @Transient
     private  String givenAnswer;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private Quiz quiz;
 
     public Question() {
