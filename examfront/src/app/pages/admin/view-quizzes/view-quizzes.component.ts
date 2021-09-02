@@ -10,7 +10,7 @@ import Swal from 'sweetalert2';
 export class ViewQuizzesComponent implements OnInit {
   quizzes=[
     {
-      qid:23,
+      qId:23,
       title:'Basic programming quiz',
       description:'The Java SE is a computing-based platform and used for developing desktop or Window based applications. ',
       maxMarks:50,
@@ -21,7 +21,7 @@ export class ViewQuizzesComponent implements OnInit {
       },
     },
     {
-      qid:23,
+      qId:23,
       title:'Basic programming quiz',
       description:'The Java SE is a computing-based platform and used for developing desktop or Window based applications. ',
       maxMarks:50,
@@ -47,5 +47,30 @@ export class ViewQuizzesComponent implements OnInit {
       }
     )
   }
-
+//delete quiz
+deleteQuiz(qId: any){
+ 
+  Swal.fire({
+    icon:'info',
+    title:"Are you sure?",
+    confirmButtonText:'Delete',
+    showCancelButton:true,
+  }).then(
+    (result)=>{
+      if(result.isConfirmed){
+        //delete
+         this._quiz.deleteQuiz(qId).subscribe(
+    (data:any)=>{
+      this.quizzes=this.quizzes.filter((quiz)=>quiz.qId!=qId);
+      Swal.fire('Success !!','Quiz Deleted','success');
+    },
+    (error:any)=>{
+      console.log(error)
+      Swal.fire('Error !!','Error in loading data','error');
+    }
+  )
+      }
+    }
+  );
+}
 }
