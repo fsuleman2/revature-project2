@@ -46,7 +46,7 @@ this.login.generateToken(this.loginData).subscribe(
           this.login.loginStatusSubject.next(true);
           // window.location.href='/admin';
         }else if(this.login.getUserRole()=='NORMAL'){
-          this.router.navigate(['user-dashboard'])
+          this.router.navigate(['user-dashboard/0'])
           this.login.loginStatusSubject.next(true);
           //window.location.href='/user-dashboard'
         }
