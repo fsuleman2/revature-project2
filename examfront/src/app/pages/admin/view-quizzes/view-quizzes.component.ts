@@ -10,14 +10,14 @@ import Swal from 'sweetalert2';
 export class ViewQuizzesComponent implements OnInit {
   quizzes=[
     {
-      qId:23,
-      title:'Basic programming quiz',
-      description:'The Java SE is a computing-based platform and used for developing desktop or Window based applications. ',
-      maxMarks:50,
-      numberOfQuestions:'20',
+      qId:'',
+      title:'',
+      description:'',
+      maxMarks:'',
+      numberOfQuestions:'',
       active:'',
       category:{
-        title:'dsdd',
+        title:'',
       },
     },
     {

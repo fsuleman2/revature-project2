@@ -107,7 +107,8 @@ import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/vi
 
     NavbarModule,
     WavesModule,
-    ButtonsModule
+    ButtonsModule,
+    
 
 
   ],
