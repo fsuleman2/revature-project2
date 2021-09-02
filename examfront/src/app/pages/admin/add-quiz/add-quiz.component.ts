@@ -45,7 +45,7 @@ quizData={
       }
     );
   }
-addQuiz(){
+public addQuiz(){
 // console.log(this.quizData)
 if(this.quizData.title.trim()=='' || this.quizData.title==null){
   this._snack.open("Title Required !!",'',{duration:3000});
