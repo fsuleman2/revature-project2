@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { QuizService } from 'src/app/services/quiz.service';
 
 @Component({
   selector: 'app-instructions',
@@ -8,12 +9,23 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class InstructionsComponent implements OnInit {
 qid:any;
-  constructor(private _route: ActivatedRoute) { }
+quiz:any;
+  constructor(private _route: ActivatedRoute,private _quiz:QuizService) { }
 
   ngOnInit( ): void {
 
     this.qid=this._route.snapshot.params.qid;
-    
+
+    this._quiz.getQuiz(this.qid).subscribe(
+      (data: any) => {
+         console.log(data);
+        this.quiz = data;
+      },
+      (error) => {
+        console.log(error);
+        alert('Error in loading quiz data');
+      }
+    )
   }
 
 }
