@@ -43,6 +43,8 @@ import {MatSelectModule} from '@angular/material/select';
 import { NavbarModule, WavesModule, ButtonsModule } from 'angular-bootstrap-md';
 import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.component';
 import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 
 
@@ -67,6 +69,8 @@ import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.compo
     ViewCategoriesComponent,
     ViewQuizzesComponent,
     UpdateQuizComponent,
+    AboutComponent,
+    ContactComponent,
     
   ],
   imports: [

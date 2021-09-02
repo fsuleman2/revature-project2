@@ -15,6 +15,8 @@ import { UserDashboardComponent } from './pages/user/user-dashboard/user-dashboa
 import { AdminGuard } from './services/admin.guard';
 import { NormalGuard } from './services/normal.guard';
 import { ViewQuizzesComponent } from './pages/admin/view-quizzes/view-quizzes.component';
+import { AboutComponent } from './pages/about/about.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -32,6 +34,16 @@ const routes: Routes = [
   {
     path:'login',
     component:LoginComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'about',
+    component:AboutComponent,
+    pathMatch:'full'
+  },
+  {
+    path:'contact',
+    component:ContactComponent,
     pathMatch:'full'
   },
   {
