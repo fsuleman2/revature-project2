@@ -47,6 +47,8 @@ import { LoadQuizComponent } from './pages/user/load-quiz/load-quiz.component';
 import { InstructionsComponent } from './pages/user/instructions/instructions.component';
 
 import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.component';
+import { ViewQuestionsComponent } from './pages/admin/view-questions/view-questions.component';
+import { ViewQuizQuestionsComponent } from './pages/admin/view-quiz-questions/view-quiz-questions.component';
 
 
 
@@ -75,7 +77,9 @@ import { UpdateQuizComponent } from './pages/admin/update-quiz/update-quiz.compo
     InstructionsComponent,
 
     UpdateQuizComponent,
-
+    displayQuestion
+    ViewQuestionsComponent,
+    ViewQuizQuestionsComponent,
     
   ],
   imports: [
