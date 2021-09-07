@@ -1,11 +1,41 @@
-# Examination(Imtehan) Portal
-## Postgress Credentials
-```sql
-Database Name : postgres
-Username : postgres
-Password : root12345
-Schema Name : exam_schema
-```
+# Imtehan Examination Portal
+  Imtehan is an Examination Portal which allows Grads to take Skill based Test at free     of cost. User can take any number of skill based test which are aligned in categories.
+<br>
+<h3>Front-End Tech Stack & Tools</h3>
+  1. HTML5 <br><br>
+  2. CSS3 <br><br>
+  3. Bootstrap<br><br>
+  4. Angular11<br><br>
+  5. TypeScript<br><br>
+  6. JavaScript ES6<br><br>
+  7. JSON for Parsing<br><br>
+  <hr>
+  <h3>Backend-End Tech Stack & Tools</h3>
+  1. Java8 <br><br>
+  2. Spring Data JPA<br><br>
+  3. Spring Boot <br><br>
+  4. POSTGRESQL<br><br>
+  5. MAVEN<br><br>
+  6. Embedded TOMCATSERVER<br><br>
+  <hr>
+  <h3>Testing Tools</h3>
+  1. POSTMAN for HTTP Request and Response Test<br><br>
+  2. JNUNIT for Testing Java Code Logic
+    <br<br><hr>
+  <h3>IDE'S</h3>
+  1. VS CODE for Frontend Code<br><br>
+  2. SPRING BOOT for Backend Code<br><br>
+  3. DBEAVER for SQL Scripts<br>
+  <br<br><hr>
+  <h3>API'S</h3>
+   1. Fetch API<br><br>
+   2. Jackson API<hr>
+ <br>
+  <h3>Postgress Credentials</h3>
+  <li>Database Name : postgres</li><br>
+  <li>Username : postgres</li><br>
+  <li>Password : root12345</li><br>
+  <li>Schema Name : exam_schema</li><br>
 <hr>
 
 ## Spring Boot Configuration Details
@@ -34,19 +64,9 @@ ng serve --open //for running project on server
 ### Angular Libraries Used
   1. Angular Material UI <br>
   ``` ng add @angular/material ```
-
-<br>
-<span>27-08-2021</span><br>
-<li>I have used [(ngModel)] for tway binding i.e TS<->HTML</li><br>
-<li>I have imported HTML API for communication via Backend</li><br>
-<li>Http Client is a class</li><br>
-<li>created a service</li><br>
-``` ng generate service user ``` 
-<br>
-<li>Added Matsnack bar from angular</li><br>
-<li>Used Sweetalert2 for showing alerts in a interactive way</li><br>
-```java
-npm install --save sweetalert2 
-```
-<br>
-```import Swal from 'sweetalert2' ```
+### NPM Packages Used
+   ``` npm install --save sweetalert2 ``` <br>
+  ``` npm install -g @angular/cli  ``` <br>
+    ``` npm install matsnackbar  ```
+### Screenshots
+ <img src="https://github.com/fsuleman2/revature-project2/screenshots/2.jpg">
