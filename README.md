@@ -69,4 +69,31 @@ ng serve --open //for running project on server
   ``` npm install -g @angular/cli  ``` <br>
     ``` npm install matsnackbar  ```
 ### Screenshots
- <img src="https://github.com/fsuleman2/revature-project2/screenshots/2.jpg">
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(1).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/2.png"><br><br>
+     <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/3.png"><br><br>
+  <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(2).png"><br><br>
+    <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(3).png"><br><br>
+  <h3>ADMIN SECTION</h3><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(5).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(6).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(7).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(8).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(9).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(10).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(11).png"><br><br>
+   <h3>USER SECTION</h3><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(12).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(13).png"><br><br>
+   <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(14).png"><br><br>
+     <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(15).png"><br><br>
+     <img src="https://github.com/fsuleman2/revature-project2/blob/master/screenshots/Examfront%20(16).png"><br><br>
+  
+# Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+For those who would like to discuss further development, my email is
+```
+sydsulmn7@gmail.com
+```
+  # License
+[MIT](https://choosealicense.com/licenses/mit/)
