@@ -6,8 +6,10 @@ import com.exam.model.JwtRequest;
 import com.exam.model.JwtResponse;
 import com.exam.model.User;
 import com.exam.service.impl.UserDetailsServiceImpl;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
@@ -21,7 +23,7 @@ import java.security.Principal;
 @RestController
 @CrossOrigin("*")
 public class AuthenticateController {
-
+	 private static final Logger log = LogManager.getLogger(AuthenticateController.class);
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -44,7 +46,7 @@ public class AuthenticateController {
 
 
         } catch (UserNotFoundException e) {
-            e.printStackTrace();
+           log.info( e.getMessage());
             throw new Exception("User not found ");
         }
 
@@ -65,9 +67,11 @@ public class AuthenticateController {
             authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(username, password));
 
         } catch (DisabledException e) {
+        	log.info(e.getMessage());
             throw new Exception("USER DISABLED " + e.getMessage());
         } catch (BadCredentialsException e) {
-            throw new Exception("Invalid Credentials " + e.getMessage());
+        	log.info(e.getMessage());
+            throw new Exception("Invalid Credentials ");
         }
     }
 

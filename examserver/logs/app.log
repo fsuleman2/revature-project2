@@ -1,0 +1,1204 @@
+2021-09-03 12:11:35,230 INFO c.e.ExamserverApplication [main] Starting ExamserverApplication on suleman with PID 17892 (E:\Project2-master\examserver\target\classes started by fsuleman2 in E:\Project2-master\examserver)
+2021-09-03 12:11:35,246 DEBUG c.e.ExamserverApplication [main] Running with Spring Boot v2.3.3.RELEASE, Spring v5.2.8.RELEASE
+2021-09-03 12:11:35,247 INFO c.e.ExamserverApplication [main] No active profile set, falling back to default profiles: default
+2021-09-03 12:11:40,399 DEBUG c.e.c.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2021-09-03 12:11:45,018 INFO c.e.ExamserverApplication [main] Started ExamserverApplication in 11.412 seconds (JVM running for 16.933)
+2021-09-03 12:11:45,022 INFO c.e.ExamserverApplication [main] ********************helloooooooooooooooo*******2021-09-03 15:32:40,721 DEBUG c.e.c.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2021-09-03 15:33:15,465 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 15:33:15,465 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 15:33:15,465 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 15:33:15,665 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 15:33:15,665 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 15:33:15,666 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 15:47:02,019 DEBUG c.e.c.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2021-09-03 15:49:32,210 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 15:49:32,210 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 15:49:32,212 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 15:49:32,273 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 15:49:32,273 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 15:49:32,273 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 15:49:33,046 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials Bad credentials] with root cause
+java.lang.Exception: Invalid Credentials Bad credentials
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:74) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-03 15:51:03,941 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-03 15:51:03,941 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-03 15:51:03,942 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-03 15:51:04,149 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials Bad credentials] with root cause
+java.lang.Exception: Invalid Credentials Bad credentials
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:74) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-03 15:51:05,574 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] null
+2021-09-03 15:51:05,574 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Invalid token , not start with bearer string
+2021-09-03 15:51:05,575 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is not valid
+2021-09-03 15:51:05,781 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-4] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials Bad credentials] with root cause
+java.lang.Exception: Invalid Credentials Bad credentials
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:74) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-03 15:51:22,870 DEBUG c.e.c.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2021-09-03 15:51:42,734 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 15:51:42,734 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 15:51:42,734 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 15:51:43,702 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials Bad credentials] with root cause
+java.lang.Exception: Invalid Credentials Bad credentials
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:75) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-03 15:52:50,594 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 15:52:50,594 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 15:52:50,595 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 15:52:50,824 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-2] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials Bad credentials] with root cause
+java.lang.Exception: Invalid Credentials Bad credentials
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:75) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-03 15:53:37,394 DEBUG c.e.c.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2021-09-03 15:53:45,300 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 15:53:45,301 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 15:53:45,301 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 15:53:46,121 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials ] with root cause
+java.lang.Exception: Invalid Credentials 
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:74) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-03 15:54:24,706 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 15:54:24,706 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 15:54:24,706 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 15:54:25,059 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] null
+2021-09-03 15:54:25,060 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Invalid token , not start with bearer string
+2021-09-03 15:54:25,060 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is not valid
+2021-09-03 15:54:25,076 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDA2NjQsImlhdCI6MTYzMDY2NDY2NH0.FpatL380QSe7luITclW0VW-ovx6fGbDxPFWEdN-m5nQ
+2021-09-03 15:54:25,145 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 15:55:14,282 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-03 15:55:14,282 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-03 15:55:14,283 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-03 15:55:14,299 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDA2NjQsImlhdCI6MTYzMDY2NDY2NH0.FpatL380QSe7luITclW0VW-ovx6fGbDxPFWEdN-m5nQ
+2021-09-03 15:55:14,313 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-03 15:55:16,608 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] null
+2021-09-03 15:55:16,610 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Invalid token , not start with bearer string
+2021-09-03 15:55:16,610 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is not valid
+2021-09-03 15:55:16,633 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDA2NjQsImlhdCI6MTYzMDY2NDY2NH0.FpatL380QSe7luITclW0VW-ovx6fGbDxPFWEdN-m5nQ
+2021-09-03 15:55:16,646 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 15:55:36,991 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDA2NjQsImlhdCI6MTYzMDY2NDY2NH0.FpatL380QSe7luITclW0VW-ovx6fGbDxPFWEdN-m5nQ
+2021-09-03 15:55:37,006 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 15:55:57,315 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] null
+2021-09-03 15:55:57,315 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Invalid token , not start with bearer string
+2021-09-03 15:55:57,316 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is not valid
+2021-09-03 15:55:57,575 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:55:57,597 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-03 15:55:57,728 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:55:57,748 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] null
+2021-09-03 15:55:57,749 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Invalid token , not start with bearer string
+2021-09-03 15:55:57,750 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is not valid
+2021-09-03 15:55:57,770 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is valid
+2021-09-03 15:55:57,784 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:55:57,828 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 15:56:07,898 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-03 15:56:07,899 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-03 15:56:07,899 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-03 15:56:07,916 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:56:07,926 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-03 15:56:09,947 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] null
+2021-09-03 15:56:09,948 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Invalid token , not start with bearer string
+2021-09-03 15:56:09,949 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is not valid
+2021-09-03 15:56:09,972 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:56:09,983 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 15:56:11,976 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:56:11,995 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 15:56:13,982 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:56:13,994 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-03 15:58:52,631 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 15:58:52,631 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 15:58:52,632 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 15:58:52,641 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:58:52,654 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 15:58:56,926 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-03 15:58:56,926 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-03 15:58:56,927 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-03 15:58:56,938 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:58:56,948 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-03 15:59:27,171 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] null
+2021-09-03 15:59:27,171 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Invalid token , not start with bearer string
+2021-09-03 15:59:27,171 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is not valid
+2021-09-03 15:59:27,183 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:59:27,195 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 15:59:39,114 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:59:39,128 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzA3MDA3NTcsImlhdCI6MTYzMDY2NDc1N30.i9oglGmup7r2OGf4pfdBUZrzB5Job1o78KZjbBoxHWk
+2021-09-03 15:59:39,129 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-03 15:59:39,137 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-03 17:12:08,015 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] null
+2021-09-03 17:12:08,016 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Invalid token , not start with bearer string
+2021-09-03 17:12:08,016 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is not valid
+2021-09-03 17:12:08,026 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-03 17:12:08,027 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-03 17:12:08,027 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-03 17:12:08,555 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] null
+2021-09-03 17:12:08,564 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Invalid token , not start with bearer string
+2021-09-03 17:12:08,565 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is not valid
+2021-09-03 17:12:08,614 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:12:08,654 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-03 17:12:23,348 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] null
+2021-09-03 17:12:23,348 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Invalid token , not start with bearer string
+2021-09-03 17:12:23,348 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is not valid
+2021-09-03 17:12:23,359 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:12:23,382 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 17:13:03,466 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] null
+2021-09-03 17:13:03,467 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Invalid token , not start with bearer string
+2021-09-03 17:13:03,467 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is not valid
+2021-09-03 17:13:03,479 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:03,510 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-03 17:13:10,158 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:10,169 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-03 17:13:16,841 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 17:13:16,841 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 17:13:16,842 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 17:13:16,859 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:16,880 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 17:13:32,434 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:32,445 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-03 17:13:36,296 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:36,326 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-03 17:13:41,926 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] null
+2021-09-03 17:13:41,927 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Invalid token , not start with bearer string
+2021-09-03 17:13:41,927 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is not valid
+2021-09-03 17:13:41,944 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:41,945 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:13:41,964 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 17:13:41,975 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 17:14:11,920 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] null
+2021-09-03 17:14:11,921 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Invalid token , not start with bearer string
+2021-09-03 17:14:11,921 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is not valid
+2021-09-03 17:14:11,933 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:14:11,944 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-03 17:14:13,902 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:14:13,912 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-03 17:14:19,513 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 17:14:19,513 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 17:14:19,514 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 17:14:19,536 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:14:19,545 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 17:15:30,825 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] null
+2021-09-03 17:15:30,826 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Invalid token , not start with bearer string
+2021-09-03 17:15:30,826 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is not valid
+2021-09-03 17:15:30,836 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:15:30,861 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 17:15:36,665 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:15:36,682 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 17:15:39,271 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:15:39,294 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-03 17:15:50,311 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:15:50,329 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-03 17:16:22,321 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:16:22,334 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-03 17:16:33,036 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 17:16:33,037 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 17:16:33,037 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 17:16:33,086 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:16:33,104 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 17:16:38,095 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:16:38,103 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-03 17:16:53,035 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:16:53,057 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-03 17:17:03,376 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:17:03,384 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-03 17:17:06,491 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:17:06,502 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 17:17:44,250 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:17:44,265 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 17:17:47,295 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:17:47,310 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-03 17:17:51,510 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 17:17:51,510 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 17:17:51,510 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 17:17:51,544 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzA3MDUzMjgsImlhdCI6MTYzMDY2OTMyOH0.Bn16g7j7ctAvaAL4o9QfclQKqrmhwFL5VhlUzpOfz78
+2021-09-03 17:17:51,557 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-03 17:19:35,009 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] null
+2021-09-03 17:19:35,009 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Invalid token , not start with bearer string
+2021-09-03 17:19:35,009 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is not valid
+2021-09-03 17:19:35,032 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-03 17:19:35,032 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-03 17:19:35,033 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-03 17:20:01,427 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] null
+2021-09-03 17:20:01,428 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Invalid token , not start with bearer string
+2021-09-03 17:20:01,428 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is not valid
+2021-09-03 17:20:02,000 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:20:02,027 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-03 17:20:02,554 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:20:02,562 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] null
+2021-09-03 17:20:02,562 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Invalid token , not start with bearer string
+2021-09-03 17:20:02,563 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is not valid
+2021-09-03 17:20:02,580 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 17:20:02,672 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:20:02,699 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-03 17:20:20,143 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 17:20:20,143 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 17:20:20,143 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 17:20:20,169 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:20:20,182 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-03 17:20:31,480 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 17:20:31,481 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 17:20:31,481 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 17:20:31,497 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:20:31,504 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 17:21:01,200 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:21:01,217 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-03 17:21:05,401 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] null
+2021-09-03 17:21:05,402 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Invalid token , not start with bearer string
+2021-09-03 17:21:05,402 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is not valid
+2021-09-03 17:21:05,439 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:21:05,450 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 17:21:16,948 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:21:16,965 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-03 17:21:40,477 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:21:40,494 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-03 17:21:52,879 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 17:21:52,880 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 17:21:52,880 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-03 17:21:52,903 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:21:52,918 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-03 17:22:27,920 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-03 17:22:27,920 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-03 17:22:27,921 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-03 17:22:27,931 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:22:27,961 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-03 17:22:50,905 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:22:50,910 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:22:50,916 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-03 17:22:50,919 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-03 17:23:06,827 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:23:06,835 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-03 17:23:11,965 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJtb2hhbjEyMzQiLCJleHAiOjE2MzA3MDU4MDEsImlhdCI6MTYzMDY2OTgwMX0.C6t8rW2ifm6GAD_9fP9qakKzmSzaFmUMDwk6uxPCXOo
+2021-09-03 17:23:11,975 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-03 17:32:01,633 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-03 17:32:01,634 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-03 17:32:01,634 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-07 21:37:57,915 DEBUG c.e.c.JwtAuthenticationFilter [main] Filter 'jwtAuthenticationFilter' configured for use
+2021-09-07 22:00:45,484 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-07 22:00:45,485 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-07 22:00:45,486 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-07 22:00:45,695 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-07 22:00:45,696 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-07 22:00:45,696 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-07 22:00:48,137 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] null
+2021-09-07 22:00:48,138 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Invalid token , not start with bearer string
+2021-09-07 22:00:48,139 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is not valid
+2021-09-07 22:00:48,171 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:00:48,338 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-07 22:01:16,593 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] null
+2021-09-07 22:01:16,593 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Invalid token , not start with bearer string
+2021-09-07 22:01:16,593 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is not valid
+2021-09-07 22:01:16,617 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:01:16,638 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-07 22:02:02,289 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:02,302 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-07 22:02:06,654 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:06,671 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-07 22:02:08,465 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] null
+2021-09-07 22:02:08,465 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Invalid token , not start with bearer string
+2021-09-07 22:02:08,465 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is not valid
+2021-09-07 22:02:08,485 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:08,501 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-07 22:02:10,894 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:10,910 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-07 22:02:14,105 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:14,122 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is valid
+2021-09-07 22:02:16,601 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:16,613 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-07 22:02:42,612 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:02:42,627 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-07 22:03:01,275 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:03:01,291 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-07 22:03:42,425 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:03:42,435 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-07 22:03:44,715 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:03:44,731 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-07 22:04:34,401 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:04:34,413 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-07 22:05:17,261 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:05:17,272 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-07 22:05:27,050 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:05:27,060 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-07 22:06:00,155 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:06:00,164 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-07 22:06:24,178 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:06:24,190 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is valid
+2021-09-07 22:06:49,822 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] null
+2021-09-07 22:06:49,822 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Invalid token , not start with bearer string
+2021-09-07 22:06:49,822 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is not valid
+2021-09-07 22:06:49,835 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:06:49,846 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-07 22:07:08,267 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:07:08,286 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-07 22:07:10,500 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:07:10,508 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is valid
+2021-09-07 22:07:24,930 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:07:24,951 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-07 22:07:27,529 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] null
+2021-09-07 22:07:27,530 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Invalid token , not start with bearer string
+2021-09-07 22:07:27,530 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is not valid
+2021-09-07 22:07:27,533 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:07:27,549 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-07 22:07:27,552 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjgyNDcsImlhdCI6MTYzMTAzMjI0N30.jusWhPJXzqjBaVjLAKCiU91GfCgF4JhlQMYPi36y384
+2021-09-07 22:07:27,577 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-07 22:07:45,683 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] null
+2021-09-07 22:07:45,684 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Invalid token , not start with bearer string
+2021-09-07 22:07:45,684 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is not valid
+2021-09-07 22:07:45,976 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg2NjUsImlhdCI6MTYzMTAzMjY2NX0.BifiXaH3NaBafXAM-Okf5lEtlkWXOEI8QQCUmZkSQHQ
+2021-09-07 22:07:45,991 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is valid
+2021-09-07 22:07:46,176 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] null
+2021-09-07 22:07:46,177 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Invalid token , not start with bearer string
+2021-09-07 22:07:46,178 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is not valid
+2021-09-07 22:07:46,216 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg2NjUsImlhdCI6MTYzMTAzMjY2NX0.BifiXaH3NaBafXAM-Okf5lEtlkWXOEI8QQCUmZkSQHQ
+2021-09-07 22:07:46,217 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg2NjUsImlhdCI6MTYzMTAzMjY2NX0.BifiXaH3NaBafXAM-Okf5lEtlkWXOEI8QQCUmZkSQHQ
+2021-09-07 22:07:46,239 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-07 22:07:46,268 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-07 22:07:58,302 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-07 22:07:58,302 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-07 22:07:58,303 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-07 22:07:58,314 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg2NjUsImlhdCI6MTYzMTAzMjY2NX0.BifiXaH3NaBafXAM-Okf5lEtlkWXOEI8QQCUmZkSQHQ
+2021-09-07 22:07:58,342 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-07 22:08:16,307 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] null
+2021-09-07 22:08:16,307 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Invalid token , not start with bearer string
+2021-09-07 22:08:16,312 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is not valid
+2021-09-07 22:08:16,327 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg2NjUsImlhdCI6MTYzMTAzMjY2NX0.BifiXaH3NaBafXAM-Okf5lEtlkWXOEI8QQCUmZkSQHQ
+2021-09-07 22:08:16,352 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-07 22:08:16,450 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-1] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IndexOutOfBoundsException: toIndex = 101] with root cause
+java.lang.IndexOutOfBoundsException: toIndex = 101
+	at java.util.AbstractList.subListRangeCheck(AbstractList.java:507) ~[?:?]
+	at java.util.ArrayList.subList(ArrayList.java:1108) ~[?:?]
+	at com.exam.controller.QuestionController.getQuestionsOfQuiz(QuestionController.java:48) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-07 22:08:36,345 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-07 22:08:36,345 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-07 22:08:36,345 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-07 22:08:36,355 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg2NjUsImlhdCI6MTYzMTAzMjY2NX0.BifiXaH3NaBafXAM-Okf5lEtlkWXOEI8QQCUmZkSQHQ
+2021-09-07 22:08:36,372 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-07 22:08:36,682 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJzdWwxMjMiLCJleHAiOjE2MzEwNjg3MTYsImlhdCI6MTYzMTAzMjcxNn0.jqHMuJoKZScZS8fEUUui2KX3W8fn2dOl268Sxu_Ydp8
+2021-09-07 22:08:36,709 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid
+2021-09-07 22:08:46,995 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-07 22:08:46,996 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-07 22:08:46,996 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-07 22:08:47,261 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-6] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials ] with root cause
+java.lang.Exception: Invalid Credentials 
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:74) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-07 22:09:02,799 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] null
+2021-09-07 22:09:02,799 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Invalid token , not start with bearer string
+2021-09-07 22:09:02,799 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is not valid
+2021-09-07 22:09:03,049 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] [http-nio-8121-exec-7] Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.Exception: Invalid Credentials ] with root cause
+java.lang.Exception: Invalid Credentials 
+	at com.exam.controller.AuthenticateController.authenticate(AuthenticateController.java:74) ~[classes/:?]
+	at com.exam.controller.AuthenticateController.generateToken(AuthenticateController.java:45) ~[classes/:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:?]
+	at jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:564) ~[?:?]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) ~[tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:113) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:320) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:126) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:90) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:118) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:158) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at com.exam.config.JwtAuthenticationFilter.doFilterInternal(JwtAuthenticationFilter.java:73) ~[classes/:?]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:92) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:77) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:334) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:215) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:178) ~[spring-security-web-5.3.4.RELEASE.jar:5.3.4.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:358) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:271) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630) [?:?]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:832) [?:?]
+2021-09-07 22:09:07,059 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] null
+2021-09-07 22:09:07,059 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Invalid token , not start with bearer string
+2021-09-07 22:09:07,060 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is not valid
+2021-09-07 22:09:07,328 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:07,349 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-07 22:09:07,530 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:07,549 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-07 22:09:07,570 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:07,601 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-07 22:09:12,685 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] null
+2021-09-07 22:09:12,685 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Invalid token , not start with bearer string
+2021-09-07 22:09:12,686 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-2] Token is not valid
+2021-09-07 22:09:12,698 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:12,709 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-3] Token is valid
+2021-09-07 22:09:15,764 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] null
+2021-09-07 22:09:15,765 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Invalid token , not start with bearer string
+2021-09-07 22:09:15,765 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is not valid
+2021-09-07 22:09:15,789 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:15,809 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-5] Token is valid
+2021-09-07 22:09:42,722 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] null
+2021-09-07 22:09:42,722 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Invalid token , not start with bearer string
+2021-09-07 22:09:42,722 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-6] Token is not valid
+2021-09-07 22:09:42,732 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:42,746 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-7] Token is valid
+2021-09-07 22:09:50,789 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:50,789 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:50,802 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-10] Token is valid
+2021-09-07 22:09:50,810 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-8] Token is valid
+2021-09-07 22:09:52,521 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:52,528 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-9] Token is valid
+2021-09-07 22:09:56,586 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:09:56,597 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-1] Token is valid
+2021-09-07 22:10:20,863 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJmc3VsZW1hbjIiLCJleHAiOjE2MzEwNjg3NDcsImlhdCI6MTYzMTAzMjc0N30.j9ZBeILcxcCs9LN6y2bw7qqrlxt28a9xute7MI-9BrM
+2021-09-07 22:10:20,869 INFO c.e.c.JwtAuthenticationFilter [http-nio-8121-exec-4] Token is valid

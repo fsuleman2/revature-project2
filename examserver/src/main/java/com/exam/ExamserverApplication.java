@@ -1,11 +1,15 @@
 package com.exam;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ExamserverApplication {
-
+public class ExamserverApplication implements CommandLineRunner {
+	  private static final Logger logger = LogManager.getLogger(ExamserverApplication.class);
+//
 //    @Autowired
 //    private UserService userService;
 //
@@ -22,7 +26,12 @@ public class ExamserverApplication {
 
 
     }
-//
+@Override
+public void run(String... args) throws Exception {
+	logger.info("********************helloooooooooooooooo*******");
+	
+}
+
 //    @Override
 //    public void run(String... args) throws Exception {
 //        try {
@@ -32,11 +41,11 @@ public class ExamserverApplication {
 ////
 //            User user = new User();
 //
-//            user.setFirstName("Syed");
-//            user.setLastName("Suleman");
+//            user.setFirstName("Suleman");
+//            user.setLastName("Syed");
 //            user.setUsername("sul123");
-//            user.setPassword(this.bCryptPasswordEncoder.encode("abc"));
-//            user.setEmail("abc@gmail.com");
+//            user.setPassword(this.bCryptPasswordEncoder.encode("sul@123"));
+//            user.setEmail("sul123@gmail.com");
 //            user.setProfile("default.png");
 //
 //            Role role1 = new Role();

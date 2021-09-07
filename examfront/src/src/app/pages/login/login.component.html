@@ -1,0 +1,55 @@
+<div class="bootstrap-wrapper">
+<div class="login-page">
+  <mat-card class="mat-elevation-z12">
+    <mat-card-title style="text-align:center;">Login Here!!</mat-card-title>
+    <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">
+      <mat-tab label="Login">
+          <mat-card-content>
+            <!-- {{loginData| json}} -->
+            <form (ngSubmit)="formSubmit()">
+              <mat-form-field>
+                <input
+                [(ngModel)]="loginData.username"
+                  matInput
+                  placeholder="Username"
+                  required
+                  name="username"
+                  ngModel
+                  #email="ngModel">
+                  <mat-error *ngIf="email.invalid">Username is required</mat-error>
+              </mat-form-field>
+              <mat-form-field>
+                <input
+                [(ngModel)] = 'loginData.password'
+                  matInput
+                  placeholder="Password"
+                  type="password"
+                  required
+                  minlength="6"
+                  name="password"
+                  ngModel
+                  #password="ngModel">
+                  <mat-error
+                    *ngIf="password.errors && password.errors.required">
+                    Password is required
+                  </mat-error>
+                  <mat-error
+                    *ngIf="password.errors && password.errors.minlength">
+                    Password must be of length 6
+                  </mat-error>
+              </mat-form-field>
+              <mat-checkbox>Remember Me!</mat-checkbox>
+              <button
+              type="submit"
+                mat-raised-button
+                color="primary"
+                class="login-button">
+               Login 
+              </button>
+            </form>
+        </mat-card-content>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
+</div>

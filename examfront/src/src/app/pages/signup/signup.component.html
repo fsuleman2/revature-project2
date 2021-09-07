@@ -1,0 +1,102 @@
+<div class="bootstrap-wrapper">
+  <div class="login-page">
+    <mat-card class="mat-elevation-z12">
+      <mat-card-title style="text-align:center;">SignUp Here!!</mat-card-title>
+      <mat-tab-group mat-stretch-tabs class="example-stretched-tabs">    
+        <mat-tab label="Sign Up">
+          <mat-card-content>
+          <form (ngSubmit)="formSubmit()">
+            <mat-form-field>
+              <input [(ngModel)]="user.firstName"
+                matInput
+                placeholder="First Name"
+                required
+                name="FirstName"
+                ngModel
+                #FirstName="ngModel">
+                <mat-error
+                *ngIf="FirstName.invalid">
+                Firstame is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input [(ngModel)]="user.lastName"
+                matInput
+                placeholder="Last Name"
+                required
+                name="LastName"
+                ngModel
+                #LastName="ngModel">
+                <mat-error
+                *ngIf="LastName.invalid">
+                Lastame is required
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input [(ngModel)]="user.username"
+                matInput
+                placeholder="User Name"
+                required
+                name="username"
+                ngModel
+                #username="ngModel">
+              <mat-error
+                *ngIf="username.invalid">
+                Username is required
+              </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+              <input [(ngModel)]="user.phone"
+              matInput
+              placeholder="Phone Number"
+              type="number"
+              minlength="10" maxlength=10 required
+              name="phonenumber"
+              ngModel
+              #phonenumber="ngModel">
+              <mat-icon matSuffix>phone</mat-icon>
+              <mat-error
+                *ngIf="phonenumber.errors && phonenumber.errors.required && phonenumber.errors.pattern">
+                Re-Enter Phone Number
+              </mat-error>
+          </mat-form-field>
+            <mat-form-field>
+              <input [(ngModel)]="user.email"
+                matInput
+                placeholder="Email"
+                required
+                name="email"
+                ngModel
+                #email="ngModel">
+                <mat-icon matSuffix>email</mat-icon>
+                <mat-error *ngIf="email.invalid">Email is required</mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <input [(ngModel)]="user.password"
+                matInput
+                placeholder="Password"
+                type="password"
+                required
+                minlength="6"
+                name="repassword"
+                ngModel
+                #repassword="ngModel">
+                <mat-icon matSuffix>password</mat-icon>
+                <mat-error
+                  *ngIf="repassword.errors && repassword.errors.required">
+                  Re-Enter Password is required
+                </mat-error>
+            </mat-form-field>
+            <button
+              mat-raised-button
+              color="primary"
+              class="login-button">
+              Sign Up
+            </button>
+          </form>
+        </mat-card-content>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-card>
+</div>
+</div>

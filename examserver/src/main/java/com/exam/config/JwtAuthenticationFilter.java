@@ -2,13 +2,12 @@ package com.exam.config;
 
 import com.exam.service.impl.UserDetailsServiceImpl;
 import io.jsonwebtoken.ExpiredJwtException;
-import org.apache.catalina.User;
-import org.apache.catalina.security.SecurityConfig;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
@@ -22,7 +21,7 @@ import java.io.IOException;
 @Component
 public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
-
+	 private static final Logger log = LogManager.getLogger(JwtAuthenticationFilter.class);
     @Autowired
     private UserDetailsServiceImpl userDetailsService;
 
@@ -34,7 +33,7 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
 
 
         final String requestTokenHeader = request.getHeader("Authorization");
-        System.out.println(requestTokenHeader);
+        log.info(requestTokenHeader);
         String username = null;
         String jwtToken = null;
 
@@ -46,15 +45,15 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             try {
                 username = this.jwtUtil.extractUsername(jwtToken);
             } catch (ExpiredJwtException e) {
-                e.printStackTrace();
-                System.out.println("jwt token has expired");
+                log.info(e.getMessage());
+                log.info("jwt token has expired");
             } catch (Exception e) {
-                e.printStackTrace();
-                System.out.println("error");
+                log.info(e.getMessage());
+                log.error("error");
             }
 
         } else {
-            System.out.println("Invalid token , not start with bearer string");
+            log.info("Invalid token , not start with bearer string");
         }
 
         //validated
@@ -62,13 +61,13 @@ public class JwtAuthenticationFilter extends OncePerRequestFilter {
             final UserDetails userDetails = this.userDetailsService.loadUserByUsername(username);
             if (this.jwtUtil.validateToken(jwtToken, userDetails)) {
                 //token is valid
-
+            	log.info("Token is valid");
                 UsernamePasswordAuthenticationToken usernamePasswordAuthentication = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());
                 usernamePasswordAuthentication.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
                 SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthentication);
             }
         } else {
-            System.out.println("Token is not valid");
+           log.info("Token is not valid");
         }
 
         filterChain.doFilter(request, response);
